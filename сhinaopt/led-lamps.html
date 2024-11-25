@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Светодиодные лампы - Китай Оптом</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Общие стили для страницы */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff6f61, #f3a683); /* Яркий градиентный фон */
+            color: white;
+        }
+
+        /* Контейнер для основного контента */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Анимация плавного появления */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Стили для карточки товара */
+        .product-card {
+            background-color: rgba(255, 255, 255, 0.9); /* Прозрачный фон */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            margin: 0 auto;
+            transform: scale(1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05); /* Увеличение при наведении */
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Стили изображения */
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card img:hover {
+            transform: scale(1.1); /* Увеличение изображения */
+        }
+
+        .product-info {
+            margin-top: 20px;
+            animation: slideIn 1s ease-out;
+            background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный фон для улучшения контраста */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Анимация появления текста */
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .price {
+            font-size: 24px;
+            color: #ff7f50;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .price span {
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #fff;
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+
+        /* Кнопка покупки */
+        .buy-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Светодиодные лампы</h1>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/61ff09oRxJL._AC_UL480_FMwebp_QL65_.jpg" alt="Светодиодные лампы">
+            
+            <div class="product-info">
+                <p class="description">Эти яркие и энергосберегающие светодиодные лампы идеально подойдут для освещения вашего дома или офиса. Они обеспечивают яркий свет при минимальном потреблении энергии, что делает их экономичными и долговечными. Лампы легко устанавливаются и имеют долгий срок службы.</p>
+                <p class="price">
+                    Цена: <span>8,000 KZT</span> | <span>600 CNY</span>
+                </p>
+                <button class="buy-btn">Купить</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

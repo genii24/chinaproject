@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница - Китай Оптом</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Общие стили */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Градиентный фон */
+            background-size: cover;
+            color: #fff;
+            transition: background 0.3s ease-in-out;
+        }
+
+        /* Шапка сайта */
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Темный фон для шапки */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header .logo {
+            font-size: 40px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        header nav ul li {
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #f5a623;
+        }
+
+        /* Секция с товарами */
+        #categories {
+            padding: 40px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            justify-items: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .product-item {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+        /* Анимация для фотографий */
+        .product-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-item:hover img {
+            transform: scale(1.05); /* Увеличение изображения */
+        }
+
+        .product-item:hover {
+            transform: translateY(-10px); /* Подъем карточки */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Эффект тени */
+        }
+
+        /* Стиль для текста */
+        .product-item p {
+            margin: 10px 0;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .product-item p.title {
+            color: #000; /* Черный цвет для названия товара */
+        }
+
+        .product-item a {
+            background-color: #ff7e5f;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-item a:hover {
+            background-color: #feb47b;
+        }
+
+        /* Анимация появления */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Китай Оптом</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#categories">Категории</a></li>
+                <li><a href="about.html">О нас</a></li>
+                     <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section id="categories">
+        <div class="product-item">
+            <img src="https://m.media-amazon.com/images/I/610qFsdenLL._AC_UY327_FMwebp_QL65_.jpg" alt="Смартфон">
+            <p class="title">Смартфон Xiaomi</p>
+            <p style="color: #ff7e5f; font-weight: bold;">Цена: 78,200 KZT / ¥1,241</p>
+            <a href="smartphone.html">Подробнее</a>
+        </div>
+
+        <div class="product-item">
+            <img src="https://m.media-amazon.com/images/I/61xhbygQN4L._AC_UY327_FMwebp_QL65_.jpg" alt="Умные часы">
+            <p class="title">Умные часы</p>
+            <p style="color: #ff7e5f; font-weight: bold;">Цена: 23,000 KZT / ¥365</p>
+            <a href="smartwatches.html">Подробнее</a>
+        </div>
+
+        <div class="product-item">
+            <img src="https://m.media-amazon.com/images/I/61xF1EFr0GL._AC_UY327_FMwebp_QL65_.jpg" alt="Беспроводные наушники">
+            <p class="title">Беспроводные наушники</p>
+            <p style="color: #ff7e5f; font-weight: bold;">Цена: 41,400 KZT / ¥664</p>
+            <a href="headphones.html">Подробнее</a>
+        </div>
+
+        <div class="product-item">
+            <img src="https://m.media-amazon.com/images/I/81CzX7GnB6L._AC_UL480_QL65_.jpg" alt="Модная одежда">
+            <p class="title">Модная одежда</p>
+            <p style="color: #ff7e5f; font-weight: bold;">Цена: 18,400 KZT / ¥292</p>
+            <a href="clothes.html">Подробнее</a>
+        </div>
+
+        <div class="product-item">
+            <img src="https://m.media-amazon.com/images/I/714LU-aHuKL._AC_UL480_FMwebp_QL65_.jpg" alt="Детские игрушки">
+            <p class="title">Детские игрушки</p>
+            <p style="color: #ff7e5f; font-weight: bold;">Цена: 9,200 KZT / ¥146</p>
+            <a href="toys.html">Подробнее</a>
+        </div>
+
+        <div class="product-item">
+            <img src="https://m.media-amazon.com/images/I/613HmnmaO6L._AC_UL480_FMwebp_QL65_.jpg" alt="Кроссовки">
+            <p class="title">Кроссовки</p>
+            <p style="color: #ff7e5f; font-weight: bold;">Цена: 23,000 KZT / ¥365</p>
+            <a href="sneakers.html">Подробнее</a>
+        </div>
+
+        <div class="product-item">
+            <img src="https://m.media-amazon.com/images/I/61CanGhx1lL._AC_UL480_FMwebp_QL65_.jpg" alt="Женские сумки">
+            <p class="title">Женские сумки</p>
+            <p style="color: #ff7e5f; font-weight: bold;">Цена: 46,000 KZT / ¥724</p>
+            <a href="bags.html">Подробнее</a>
+        </div>
+
+        <div class="product-item">
+            <img src="https://m.media-amazon.com/images/I/61ff09oRxJL._AC_UL480_FMwebp_QL65_.jpg" alt="Светодиодные лампы">
+            <p class="title">Светодиодные лампы</p>
+            <p style="color: #ff7e5f; font-weight: bold;">Цена: 9,200 KZT / ¥146</p>
+            <a href="led-lamps.html">Подробнее</a>
+        </div >
+
+<div class="product-item">
+            <img src="https://m.media-amazon.com/images/I/41yzKby1BJL._AC_UY327_FMwebp_QL65_.jpg" alt="Пауэрбанк">
+            <p class="title">Пауэрбанк</p>
+            <p style="color: #ff7e5f; font-weight: bold;">Цена: 15,800 KZT / ¥246</p>
+            <a href="powerbank.html">Подробнее</a>
+        </div>
+    </section>
+
+    <!-- Контактная информация -->
+    <section id="contacts" style="text-align: center; padding: 50px 0; background-color: rgba(0, 0, 0, 0.7);">
+        <h2>Контакты</h2>
+        <p>Мы всегда на связи! Если у вас есть вопросы, свяжитесь с нами:</p>
+        <p>Email: <a href="mailto:contact@chinaopt.com" style="color: #ff7e5f;">contact@chinaopt.com</a></p>
+        <p>Телефон: +7 123 456 7890</p>
+    </section>
+</body>
+</html>
